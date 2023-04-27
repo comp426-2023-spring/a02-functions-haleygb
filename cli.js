@@ -35,8 +35,19 @@ if (args.j) {
     exit(0)}
 
 
+
+
 //add information for a specific day
 const days = args.d 
+
+//parse json
+
+if (data.daily.precipitation_hours[days] == 0){
+    console.log("Put on your sunscreen")
+}
+else {
+    console.log("Better grab your galoshes")
+}
 
 if (days == 0) {
   console.log("today.")

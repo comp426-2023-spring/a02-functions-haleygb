@@ -18,7 +18,7 @@ const args = minimist(process.argv.slice(2))
 //test to see if one of the args is h
 if (args.h) {
     console.log(help_text)
-    exit(0)}
+    process.exit(0)}
 //extract timezone
 const timezone = moment.tz.guess()
 
@@ -32,7 +32,7 @@ const data = await response.json()
 
 if (args.j) {
     console.log(data)
-    exit(0)}
+   process.exit(0)}
 
 
 
